@@ -1,0 +1,30 @@
+.quote {
+    width: 630px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.4);
+    border-radius: 0 0 30px 30px;
+}
+
+.text {
+    width: 440px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-right: 1px solid black;
+}
+
+.author {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}

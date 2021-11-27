@@ -6,14 +6,18 @@
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/calculator.css">
     <link rel="stylesheet" href="css/clock.css">
     <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/rightmenu.css">
+    <link rel="stylesheet" href="css/quotes.css">
     <title>Momentum</title>
 </head>
 <body>
 <div id="main-wrap">
     <div id="wrap">
+        <div id="dark-wrap"></div>
         <div id="main-box">
             <div id="calculator-wrap">
                 <div id="calculator-box">
@@ -60,8 +64,9 @@
                     </div>
                 </div>
                 <div class="weather-box">
-                    <span class="city"></span>
                     <span class="weather"></span>
+                    <div class="temp"></div>
+                    <span class="city"></span>
                 </div>
             </div>
             <div id="todo-wrap">
@@ -69,7 +74,10 @@
                     <form class="login">
                         Good day, <h2 class="name-input"></h2>
                     </form>
-                    <div class="quote">quote</div>
+                    <div class="quote">
+                        <span class="text"></span>
+                        <span class="author"></span>
+                    </div>
                 </div>
                 <div id="todo-box">
                     <div class="calender">calender</div>
@@ -81,6 +89,15 @@
             </div>
         </div>
     </div>
+    <div id="menu-box">
+        <ul class="menu">
+            <li class="goole"><a href="https://www.google.com/" target="_blank"></a></li>
+            <li class="naver"><a href="https://www.naver.com/" target="_blank"></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/" target="_blank"></a></li>
+            <li class="nomad"><a href="https://nomadcoders.co/" target="_blank"></a></li>
+           <li class="dark"><i class="fas fa-moon"></i></li>
+        </ul>
+    </div>
     <div id="background"></div>
 </div>
 
@@ -91,11 +108,14 @@
         <button class="modal-btn">Submit</button>
     </form>
 </div>
+
 <script src="src/app.js"></script>
 <script src="src/calculator.js"></script>
 <script src="src/modal.js"></script>
 <script src="src/background.js"></script>
 <script src="src/clock.js"></script>
 <script src="src/weather.js"></script>
+<script src="src/quotes.js"></script>
+<script src="src/darkmode.js"></script>
 </body>
 </html>
