@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.07);
 }
 
 #calculator-box{
@@ -23,6 +24,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
 }
 
 .calculator{
@@ -30,6 +32,7 @@
     display: grid;
     width: 400px;
     height: 460px;
+
 }
 
 .calculator .value{
@@ -41,8 +44,9 @@
     border: none;
     text-align: right;
     font-size: 30px;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.4);
+    font-weight: 900;
+    padding: 57px;
+    background: rgba(255, 255, 255, 0.45);
 }
 
 .num-hidden{
@@ -50,16 +54,16 @@
 }
 
 #num-box{
-    width: 400px;
+    width: 320px;
     height: 350px;
     position: absolute;
-    margin: 118px 0 0 16px;
+    margin: 118px 0 0 50px;
 }
 
 .num{
-    width: 80px;
-    height: 55px;
-    border-radius: 15px;
+    width: 60px;
+    height: 58px;
+    border-radius: 50%;
     display: block;
     float: left;
     text-align: center;
@@ -68,9 +72,11 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin:10px 16px 0 0;
+    margin:8px 18px 0 0;
     font-size: 20px;
-    transition: 0.3s;
+    font-weight: 500;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
+    transition: 0.2s;
 }
 
 .fa-power-off{
@@ -79,10 +85,10 @@
 }
 
 .num:hover{
+    transform: scale(1.15);
     color:deeppink;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 1);
-    transition: 0.1s;
 }
 
 .num:active{

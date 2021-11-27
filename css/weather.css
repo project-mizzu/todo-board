@@ -14,7 +14,7 @@
 .weather-box:hover{
     transform: scale(1.4);
     border: 1px solid rgba(255, 255, 255, 1);
-    background-color:rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.6);
 }
 
 .weather {
@@ -24,28 +24,35 @@
     right: 15px;
     width: 55px;
     height: 55px;
-    background: #ff2fa5;
+}
+
+.weatherIcon{
+    position: absolute;
+    top: 10px;
+    right: 12px;
 }
 
 .temp {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 20px;
     width: 95px;
     height: 30px;
     line-height: 30px;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .city {
     display: block;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 20px;
     width: 120px;
     height: 20px;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
     line-height: 20px;
 }

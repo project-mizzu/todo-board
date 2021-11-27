@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="css/rightmenu.css">
     <link rel="stylesheet" href="css/quotes.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/dycalendar.css">
     <title>Momentum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <div id="main-wrap">
@@ -65,6 +71,7 @@
                 </div>
                 <div class="weather-box">
                     <span class="weather"></span>
+                    <img class="weatherIcon">
                     <div class="temp"></div>
                     <span class="city"></span>
                 </div>
@@ -80,7 +87,9 @@
                     </div>
                 </div>
                 <div id="todo-box">
-                    <div class="calender">calender</div>
+                    <div class="calender">
+                        <div id="dycalender"></div>
+                    </div>
                     <div class="todo">todo</div>
                 </div>
             </div>
@@ -95,7 +104,7 @@
             <li class="naver"><a href="https://www.naver.com/" target="_blank"></a></li>
             <li class="youtube"><a href="https://www.youtube.com/" target="_blank"></a></li>
             <li class="nomad"><a href="https://nomadcoders.co/" target="_blank"></a></li>
-           <li class="dark"><i class="fas fa-moon"></i></li>
+            <li class="dark"><i class="fas fa-moon"></i></li>
         </ul>
     </div>
     <div id="background"></div>
@@ -117,5 +126,13 @@
 <script src="src/weather.js"></script>
 <script src="src/quotes.js"></script>
 <script src="src/darkmode.js"></script>
+<script src="src/calender.js"></script>
+<script src="src/dycalendar.js"></script>
+<script>
+    dycalendar.draw({
+        target: "#dycalender",
+        type: "month",
+    })
+</script>
 </body>
 </html>

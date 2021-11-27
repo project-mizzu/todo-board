@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -64,6 +65,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.07);
 }
 
 #todo-wrap {
@@ -78,6 +80,7 @@ body{
     position: absolute;
     margin: 50px 0 0 520px;
     display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
 }
 
 #login-box {
@@ -91,6 +94,7 @@ body{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
 }
 
 .login {
@@ -102,7 +106,8 @@ body{
     border-bottom: 1px solid white;
     margin-left: 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 900;
+    font-style: italic;
 }
 
 #todo-box {
@@ -114,22 +119,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.calender {
-    width: 305px;
-    height: 340px;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 25px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
-
 
 .todo {
     width: 305px;
@@ -143,6 +132,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
 }
 
 #music-box {
@@ -159,6 +149,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.07);
 }
 
 .music {
@@ -173,4 +164,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
 }
