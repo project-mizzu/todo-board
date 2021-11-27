@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/clock.css">
     <title>Momentum</title>
 </head>
 <body>
@@ -41,7 +43,19 @@
 
         </div>
         <div id="widget-box">
-            <div class="clock">clock</div>
+            <div class="clock">
+                <div class="clock-box">
+                    <div class="hour">
+                        <div class="hr" id="hr"></div>
+                    </div>
+                    <div class="min">
+                        <div class="mn" id="mn"></div>
+                    </div>
+                    <div class="sec">
+                        <div class="sc" id="sc"></div>
+                    </div>
+                </div>
+            </div>
             <div class="weather">weather</div>
         </div>
         <div id="todo-wrap">
@@ -73,5 +87,6 @@
 <script src="src/calculator.js"></script>
 <script src="src/modal.js"></script>
 <script src="src/background.js"></script>
+<script src="src/clock.js"></script>
 </body>
 </html>
