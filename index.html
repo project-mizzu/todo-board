@@ -2,34 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
 <body>
+
 <div id="wrap">
     <div id="main-box">
-        <div id="calculator-box">
-            <form class="calculator" name="calc">
-                <input type="text" readonly class="value" name="txt">
-                <span class="num" onclick="calc.txt.value = ''">c</span>
-                <span class="num" onclick="document.calc.txt.value += '/'">/</span>
-                <span class="num" onclick="document.calc.txt.value += '*'">*</span>
-                <span class="num" onclick="document.calc.txt.value += '7'">7</span>
-                <span class="num" onclick="document.calc.txt.value += '8'">8</span>
-                <span class="num" onclick="document.calc.txt.value += '9'">9</span>
-                <span class="num" onclick="document.calc.txt.value += '-'">-</span>
-                <span class="num" onclick="document.calc.txt.value += '4'">4</span>
-                <span class="num" onclick="document.calc.txt.value += '5'">5</span>
-                <span class="num" onclick="document.calc.txt.value += '6'">6</span>
-                <span class="num" onclick="document.calc.txt.value += '+'">+</span>
-                <span class="num" onclick="document.calc.txt.value += '1'">1</span>
-                <span class="num" onclick="document.calc.txt.value += '2'">2</span>
-                <span class="num" onclick="document.calc.txt.value += '3'">3</span>
-                <span class="num" onclick="document.calc.txt.value += '0'">0</span>
-                <span class="num" onclick="document.calc.txt.value += '00'">00</span>
-                <span class="num" onclick="document.calc.txt.value += '.'">.</span>
-                <span class="num" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-            </form>
+        <div id="calculator-wrap">
+            <div id="calculator-box">
+                <form class="calculator" name="calc">
+                    <input type="text" readonly class="value" name="txt">
+                    <div id="num-box">
+                        <span class="num" onclick="calc.txt.value = ''">c</span>
+                        <span class="num" onclick="document.calc.txt.value += '%'">%</span>
+                        <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+                        <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+                        <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+                        <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+                        <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+                        <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+                        <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+                        <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+                        <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+                        <span class="num" onclick="document.calc.txt.value += '+'">+</span>
+                        <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+                        <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+                        <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+                        <span class="num" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+                        <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+                        <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+                        <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+                        <span class="num onoff"><i class="fas fa-power-off"></i></span>
+                    </div>
+                </form>
+            </div>
+
         </div>
         <div id="widget-box">
             <div class="clock">clock</div>
@@ -37,7 +47,9 @@
         </div>
         <div id="todo-wrap">
             <div id="login-box">
-                <div class="login">login</div>
+                <form class="login">
+                    Good day, <input type="text" placeholder=" Please Write your name!">
+                </form>
                 <div class="quote">quote</div>
             </div>
             <div id="todo-box">
@@ -50,6 +62,15 @@
         </div>
     </div>
 </div>
+<div id="modal">
+    <form class="modal-form">
+        <p class="modal-title">What is your name?</p>
+        <input class="modal-input" type="text" placeholder="please write your name">
+        <button class="modal-btn">Submit</button>
+    </form>
+</div>
 <script src="src/app.js"></script>
+<script src="src/calculator.js"></script>
+<script src="src/modal.js"></script>
 </body>
 </html>
