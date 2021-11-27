@@ -9,10 +9,17 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("../image/01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
+}
+
+#background{
+    position: fixed;
+    z-index: -99;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    min-width: 500px;
 }
 
 ::-webkit-scrollbar {
@@ -203,6 +210,8 @@
     align-items: center;
     border-bottom: 1px solid white;
     margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .quote {
@@ -296,6 +305,7 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    display: none;
 }
 
 .modal-form{

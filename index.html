@@ -8,7 +8,6 @@
     <title>Momentum</title>
 </head>
 <body>
-
 <div id="wrap">
     <div id="main-box">
         <div id="calculator-wrap">
@@ -48,7 +47,7 @@
         <div id="todo-wrap">
             <div id="login-box">
                 <form class="login">
-                    Good day, <input type="text" placeholder=" Please Write your name!">
+                    Good day, <h2 class="name-input"></h2>
                 </form>
                 <div class="quote">quote</div>
             </div>
@@ -62,15 +61,17 @@
         </div>
     </div>
 </div>
+<div id="background"></div>
 <div id="modal">
     <form class="modal-form">
         <p class="modal-title">What is your name?</p>
-        <input class="modal-input" type="text" placeholder="please write your name">
+        <input class="modal-input" required maxlength="20" type="text" placeholder="please write your name">
         <button class="modal-btn">Submit</button>
     </form>
 </div>
 <script src="src/app.js"></script>
 <script src="src/calculator.js"></script>
 <script src="src/modal.js"></script>
+<script src="src/background.js"></script>
 </body>
 </html>

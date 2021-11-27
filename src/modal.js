@@ -7,3 +7,6 @@ function modalDel(event) {
 }
 
 btn.addEventListener("click", modalDel);
+
+const modalValue = document.querySelector(".modal-input");
+const nameValue = document.querySelector(".name-input");
