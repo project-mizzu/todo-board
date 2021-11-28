@@ -97,10 +97,14 @@
 
 .num-yellow {
     background: rgba(255, 211, 182, 0.4);
+    border: 1px solid rgba(255, 211, 182, 0.8);
+    border-left: 1px solid rgba(255, 211, 182, 0.3);
+    border-top: 1px solid rgba(255, 211, 182, 0.3);
 }
 
 .num-yellow:hover {
-    background: rgba(255, 211, 182, 0.8);
+    background: rgba(255, 211, 182, 0.6);
+    border: 1px solid rgba(255, 211, 182, 1);
     color: #FF8B94;
 }
 
@@ -110,12 +114,16 @@
 
 .num-baby {
     background: rgba(255, 170, 165, 0.4);
+    border: 1px solid rgba(255, 170, 165, 0.8);
+    border-left: 1px solid rgba(255, 170, 165, 0.3);
+    border-top: 1px solid rgba(255, 170, 165, 0.3);
 }
 
 
 .num-baby:hover {
-    background: rgba(255, 170, 165, 0.8);
-    color: #ffe6ca;
+    background: rgba(255, 170, 165, 0.6);
+    border: 1px solid rgba(255, 170, 165, 1);
+    color: #ffe6cd;
 }
 
 .num-baby:active {
@@ -124,10 +132,14 @@
 
 .num-pink {
     background: rgba(255, 139, 148, 0.5);
+    border: 1px solid rgba(255, 139, 148, 0.8);
+    border-left: 1px solid rgba(255, 139, 148, 0.3);
+    border-top: 1px solid rgba(255, 139, 148, 0.3);
 }
 
 .num-pink:hover {
-    background: rgba(255, 139, 148, 0.8);
+    background: rgba(255, 139, 148, 0.7);
+    border: 1px solid rgba(255, 139, 148, 1);
     color: #FFD3B6;
 }
 
