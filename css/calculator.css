@@ -12,22 +12,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.07);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.07);
 }
 
-#calculator-box{
+#calculator-box {
     position: relative;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
     z-index: 10;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.03);
 }
 
-.calculator{
+.calculator {
     position: relative;
     display: grid;
     width: 400px;
@@ -35,7 +35,7 @@
 
 }
 
-.calculator .value{
+.calculator .value {
     position: absolute;
     grid-column: 4;
     height: 110px;
@@ -49,18 +49,18 @@
     background: rgba(255, 255, 255, 0.45);
 }
 
-.num-hidden{
+.num-hidden {
     display: none;
 }
 
-#num-box{
+#num-box {
     width: 320px;
     height: 350px;
     position: absolute;
     margin: 118px 0 0 50px;
 }
 
-.num{
+.num {
     width: 60px;
     height: 58px;
     border-radius: 50%;
@@ -72,25 +72,65 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin:8px 18px 0 0;
+    margin: 8px 18px 0 0;
     font-size: 20px;
     font-weight: 500;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.03);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.03);
     transition: 0.2s;
 }
 
-.fa-power-off{
+.fa-power-off {
     font-size: 16px;
     line-height: 45px;
 }
 
-.num:hover{
+.num:hover {
     transform: scale(1.15);
-    color:deeppink;
+    color: #FF8B94;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.num:active{
-    color: #8dff2f;
+.num:active {
+    color: #95e8c9;
+}
+
+.num-yellow {
+    background: rgba(255, 211, 182, 0.4);
+}
+
+.num-yellow:hover {
+    background: rgba(255, 211, 182, 0.8);
+    color: #FF8B94;
+}
+
+.num-yellow:active {
+    color: #95e8c9;
+}
+
+.num-baby {
+    background: rgba(255, 170, 165, 0.4);
+}
+
+
+.num-baby:hover {
+    background: rgba(255, 170, 165, 0.8);
+    color: #ffe6ca;
+}
+
+.num-baby:active {
+    color: #95e8c9;
+}
+
+.num-pink {
+    background: rgba(255, 139, 148, 0.5);
+}
+
+.num-pink:hover {
+    background: rgba(255, 139, 148, 0.8);
+    color: #FFD3B6;
+}
+
+.num-pink:active {
+    color: #95e8c9;
 }
