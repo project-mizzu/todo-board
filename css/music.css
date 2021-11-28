@@ -34,7 +34,8 @@
     height: 95px;
     font-size: 20px;
     font-weight: 900;
-    padding: 37px 0 0 45px;
+    font-style: italic;
+    padding: 37px 0 0 58px;
     border-left: 1px solid #333333FF;
 }
 
@@ -93,7 +94,7 @@
     height: inherit;
     position: absolute;
     bottom: -16px;
-    left: -9.9px;
+    left: -10.2px;
     animation: rotate 3s linear infinite;
 
     animation-play-state: paused;
@@ -160,10 +161,10 @@
 }
 
 .music-info {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
