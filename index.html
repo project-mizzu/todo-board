@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/calender.css">
     <link rel="stylesheet" href="css/dycalendar.css">
     <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/music.css">
     <title>Momentum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,9 +113,32 @@
             <div id="music-box">
                 <div class="music">
                     <h2>Music Player</h2>
-                    <div class="music-container">
-                        <div class="music-info"></div>
+                    <div class="music-container" id="music-container">
+                        <div class="music-info">
+                            <h4 id="music-title" class="music-title"></h4>
+                            <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                            </div>
+                        </div>
+
                         <audio src="music/Freedom.mp3"></audio>
+
+                        <div class="img-container">
+                            
+                        </div>
+
+                        <div class="navi">
+                          <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                            <button id="play" class="action-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                            <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
