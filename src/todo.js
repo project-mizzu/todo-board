@@ -28,17 +28,24 @@ function deleteToDo(event) {
 function paintToDo(newTodo) {
     const newList = document.createElement("li");
     newList.id = newTodo.id;
+    newList.classList.add("todo-list-text");
+
+    const newCheck = document.createElement("i");
+    newCheck.innerHTML = `<i class="far fa-check-circle"></i>`;
+
     const newSpan = document.createElement("span");
     newSpan.innerText = newTodo.text;
+
     const newBtn = document.createElement("button");
-    newBtn.innerText = "❌";
+    newBtn.classList.add("todo-list-btn");
+    newBtn.innerText = "🗑️"
     newBtn.addEventListener("click", deleteToDo);
 
+    newList.appendChild(newCheck);
     newList.appendChild(newSpan);
     newList.appendChild(newBtn);
 
     toDoList.appendChild(newList);
-
 }
 
 function handleToDoSubmit(event) {

@@ -101,6 +101,8 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.03);
     position: absolute;
     right: 12px;
+    font-size: 10px;
+    outline: none;
     transition: 0.3s;
     color: rgba(0,0,0,0.6);
 }
@@ -109,7 +111,7 @@
     transform: scale(1.15);
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(255, 255, 255, 1);
-    color: #FF8B94;
+    color: black;
 }
 
 #todo-input {
@@ -124,7 +126,8 @@
     width: 250px;
     height: 26px;
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
     outline: none;
     padding-left: 15px;
     background: rgba(255, 255, 255, 0.4);
@@ -150,6 +153,7 @@
     border: 1px solid rgba(255, 139, 148, 0.8);
     border-left: 1px solid rgba(255, 139, 148, 0.3);
     border-top: 1px solid rgba(255, 139, 148, 0.3);
+    outline: none;
     transition: 0.3s;
 }
 
