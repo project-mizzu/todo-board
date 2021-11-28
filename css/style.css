@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
 body {
@@ -152,36 +153,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
     margin-left: 20px;
     font-size: 14px;
     font-weight: 900;
     font-style: italic;
-}
-
-#todo-box {
-    width: 630px;
-    height: 340px;
-    position: absolute;
-    margin: 140px 0 0 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.todo {
-    width: 305px;
-    height: 340px;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 25px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.03);
 }
 
 #music-box {
