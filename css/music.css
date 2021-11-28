@@ -50,7 +50,40 @@
 
 .img-container {
     position: relative;
-    width: 110px;
+    width: 120px;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+
+.img-container:hover {
+    transform: scale(1.5);
+}
+
+.music-dot {
+    position: absolute;
+    background: #e0e0e0;
+    width: 15px;
+    height: 15px;
+    z-index: 50;
+    border-radius: 50%;
+    top: 20px;
+    left: 28px;
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 4px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.img-back {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    top: -25.8px;
+    left: -17.5px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
 }
 
 .img-container img {
@@ -59,8 +92,8 @@
     width: 90px;
     height: inherit;
     position: absolute;
-    bottom: -22px;
-    left: -10px;
+    bottom: -16px;
+    left: -9.9px;
     animation: rotate 3s linear infinite;
 
     animation-play-state: paused;
@@ -83,22 +116,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 220px;
+    height: 60px;
     z-index: 1;
+    margin-left: -10px;
 }
 
 .action-btn {
-    background: none;
-    border: 0;
-    color: gray;
+    color: #333333FF;
     font-size: 20px;
     cursor: pointer;
-    padding: 10px;
-    margin: 0 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
 }
 
-.action-btn.action-btn-big {
-    color: #2bb063;
-    font-size: 30px;
+.action-btn:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.action-btn:hover {
+    transform: scale(1.2);
+    color: #FF8B94;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.action-btn:nth-child(2):hover {
+    transform: scale(1.3);
 }
 
 .action-btn:focus {
@@ -106,7 +160,7 @@
 }
 
 .music-info {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -124,14 +178,14 @@
 
 .music-container.play .music-info {
     opacity: 1;
-    transform: translateY(-158%);
+    transform: translateY(-143%);
 }
 
-.music-info h4{
+.music-info h4 {
     margin: 0;
 }
 
-.progress-container{
+.progress-container {
     background: rgba(255, 211, 182, 0.4);
     border: 1px solid rgba(255, 211, 182, 0.8);
     border-left: 1px solid rgba(255, 211, 182, 0.3);
@@ -141,16 +195,27 @@
     margin: 10px 0;
     height: 5px;
     width: 100%;
+    transition: 0.3s;
+
+}
+
+.progress-container:hover {
+    background: rgba(255, 211, 182, 0.9);
+    border: 1px solid rgba(255, 211, 182, 1);
 }
 
 .progress {
-    background: #FF8B94;
+    background: #FFAAA5;
     border-radius: 5px;
     height: 100%;
     width: 0%;
-    transition: width .1s linear;
+    transition: 0.3s;
 }
 
+.progress:hover {
+    background: #FF8B94;
+
+}
 
 
 
