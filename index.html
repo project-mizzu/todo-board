@@ -113,18 +113,18 @@
             <div id="music-box">
                 <div class="music">
 
-                    <div class="music-container play" id="music-container">
+                    <div class="music-container" id="music-container">
                         <div class="music-info">
-                            <h4 id="music-title" class="music-title">Freedom</h4>
+                            <h4 id="music-title" class="music-title"></h4>
                             <div class="progress-container" id="progress-container">
                                 <div class="progress" id="progress"></div>
                             </div>
                         </div>
 
-                        <audio src="music/Freedom.mp3"></audio>
+                        <audio id="audio" src="music/Freedom.mp3"></audio>
 
                         <div class="img-container">
-                            <img src="image/album01.jpg" alt="" id="music-cover">
+                            <img src="image/Freedom.jpg" alt="" id="music-cover">
                         </div>
 
                         <div class="navi">
@@ -175,6 +175,7 @@
 <script src="src/calender.js"></script>
 <script src="src/dycalendar.js"></script>
 <script src="src/todo.js"></script>
+<script src="src/music.js"></script>
 <script>
     dycalendar.draw({
         target: "#dycalender",
