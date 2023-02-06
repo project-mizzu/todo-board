@@ -5,6 +5,7 @@
 - 노마드코더 바닐라 챌린지 졸업 작품으로 제출하여, 2021 노마드 어워즈 자바스크립트 부문 1등 상을 받았습니다.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/95073450/216905708-8460b7d8-b2dc-4f01-b120-4dc4e9c74687.png">
+바로가기 : https://project-mizzu.github.io/todo-board/
 
 ### 메인 기능
 
