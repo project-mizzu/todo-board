@@ -1,191 +1,264 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/darkmode.css">
-    <link rel="stylesheet" href="css/calculator.css">
-    <link rel="stylesheet" href="css/clock.css">
-    <link rel="stylesheet" href="css/weather.css">
-    <link rel="stylesheet" href="css/rightmenu.css">
-    <link rel="stylesheet" href="css/quotes.css">
-    <link rel="stylesheet" href="css/calender.css">
-    <link rel="stylesheet" href="css/dycalendar.css">
-    <link rel="stylesheet" href="css/todo.css">
-    <link rel="stylesheet" href="css/music.css">
-    <title>Momentum</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap"
-          rel="stylesheet">
-</head>
-<body>
-<div id="main-wrap">
-    <div id="wrap">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/darkmode.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/rightmenu.css" />
+    <link rel="stylesheet" href="css/quotes.css" />
+    <link rel="stylesheet" href="css/calender.css" />
+    <link rel="stylesheet" href="css/dycalendar.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/music.css" />
+    <title>Todo-Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-wrap">
+      <div id="wrap">
         <div id="dark-wrap"></div>
         <div id="main-box">
-            <div class="dot-first"></div>
-            <div class="dot-second"></div>
-            <div class="dot-third"></div>
-            <div class="dot-fourth"></div>
-            <div id="calculator-wrap">
-                <div id="calculator-box">
-                    <form class="calculator" name="calc">
-                        <input type="text" readonly class="value" name="txt">
-                        <div id="num-box">
-                            <span class="num num-yellow" onclick="calc.txt.value = ''">c</span>
-                            <span class="num num-yellow" onclick="document.calc.txt.value += '%'">%</span>
-                            <span class="num num-yellow" onclick="document.calc.txt.value += '/'">/</span>
-                            <span class="num num-yellow" onclick="document.calc.txt.value += '*'">*</span>
-                            <span class="num" onclick="document.calc.txt.value += '7'">7</span>
-                            <span class="num" onclick="document.calc.txt.value += '8'">8</span>
-                            <span class="num" onclick="document.calc.txt.value += '9'">9</span>
-                            <span class="num num-baby" onclick="document.calc.txt.value += '-'">-</span>
-                            <span class="num" onclick="document.calc.txt.value += '4'">4</span>
-                            <span class="num" onclick="document.calc.txt.value += '5'">5</span>
-                            <span class="num" onclick="document.calc.txt.value += '6'">6</span>
-                            <span class="num num-baby" onclick="document.calc.txt.value += '+'">+</span>
-                            <span class="num" onclick="document.calc.txt.value += '1'">1</span>
-                            <span class="num" onclick="document.calc.txt.value += '2'">2</span>
-                            <span class="num" onclick="document.calc.txt.value += '3'">3</span>
-                            <span class="num num-baby" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
-                            <span class="num" onclick="document.calc.txt.value += '0'">0</span>
-                            <span class="num" onclick="document.calc.txt.value += '00'">00</span>
-                            <span class="num" onclick="document.calc.txt.value += '.'">.</span>
-                            <span class="num onoff num-pink"><i class="fas fa-power-off"></i></span>
-                        </div>
-                    </form>
+          <div class="dot-first"></div>
+          <div class="dot-second"></div>
+          <div class="dot-third"></div>
+          <div class="dot-fourth"></div>
+          <div id="calculator-wrap">
+            <div id="calculator-box">
+              <form class="calculator" name="calc">
+                <input type="text" readonly class="value" name="txt" />
+                <div id="num-box">
+                  <span class="num num-yellow" onclick="calc.txt.value = ''"
+                    >c</span
+                  >
+                  <span
+                    class="num num-yellow"
+                    onclick="document.calc.txt.value += '%'"
+                    >%</span
+                  >
+                  <span
+                    class="num num-yellow"
+                    onclick="document.calc.txt.value += '/'"
+                    >/</span
+                  >
+                  <span
+                    class="num num-yellow"
+                    onclick="document.calc.txt.value += '*'"
+                    >*</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '7'"
+                    >7</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '8'"
+                    >8</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '9'"
+                    >9</span
+                  >
+                  <span
+                    class="num num-baby"
+                    onclick="document.calc.txt.value += '-'"
+                    >-</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '4'"
+                    >4</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '5'"
+                    >5</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '6'"
+                    >6</span
+                  >
+                  <span
+                    class="num num-baby"
+                    onclick="document.calc.txt.value += '+'"
+                    >+</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '1'"
+                    >1</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '2'"
+                    >2</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '3'"
+                    >3</span
+                  >
+                  <span
+                    class="num num-baby"
+                    onclick="document.calc.txt.value = eval(calc.txt.value)"
+                    >=</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '0'"
+                    >0</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '00'"
+                    >00</span
+                  >
+                  <span class="num" onclick="document.calc.txt.value += '.'"
+                    >.</span
+                  >
+                  <span class="num onoff num-pink"
+                    ><i class="fas fa-power-off"></i
+                  ></span>
                 </div>
+              </form>
             </div>
-            <div id="widget-box">
-                <div class="clock">
-                    <div class="clock-box">
-                        <div class="hour">
-                            <div class="hr" id="hr"></div>
-                        </div>
-                        <div class="min">
-                            <div class="mn" id="mn"></div>
-                        </div>
-                        <div class="sec">
-                            <div class="sc" id="sc"></div>
-                        </div>
-                    </div>
+          </div>
+          <div id="widget-box">
+            <div class="clock">
+              <div class="clock-box">
+                <div class="hour">
+                  <div class="hr" id="hr"></div>
                 </div>
-                <div class="weather-box">
-                    <span class="weather"></span>
-                    <img class="weatherIcon">
-                    <div class="temp"></div>
-                    <span class="city"></span>
+                <div class="min">
+                  <div class="mn" id="mn"></div>
                 </div>
+                <div class="sec">
+                  <div class="sc" id="sc"></div>
+                </div>
+              </div>
             </div>
-            <div id="todo-wrap">
-                <div id="login-box">
-                    <form class="login">
-                        <h2 class="name-input"></h2>
-                    </form>
-                    <div class="quote">
-                        <span class="text"></span>
-                        <span class="author"></span>
-                    </div>
-                </div>
-                <div id="todo-box">
-                    <div class="calender">
-                        <div id="dycalender"></div>
-                    </div>
-                    <div class="todo">
-                        <div class="todo-date">
-                            <h2>TODAY</h2>
-                            <span class="today">date</span>
-                        </div>
-                        <ul id="todo-list">
-                        </ul>
-                        <form id="todo-input">
-                            <input class="todo-input-text" maxlength="20" type="text"
-                                   placeholder="Please write your to-do!">
-                            <button class="todo-input-btn"></button>
-                        </form>
-                    </div>
-                </div>
+            <div class="weather-box">
+              <span class="weather"></span>
+              <img class="weatherIcon" />
+              <div class="temp"></div>
+              <span class="city"></span>
             </div>
-            <div id="music-box">
-                <div class="music">
-
-                    <div class="music-container" id="music-container">
-                        <div class="music-info">
-                            <h4 id="music-title" class="music-title"></h4>
-                            <div class="progress-container" id="progress-container">
-                                <div class="progress" id="progress"></div>
-                            </div>
-                        </div>
-
-                        <audio id="audio" src="music/Freedom.mp3"></audio>
-
-                        <div class="img-container">
-                            <div class="music-dot"></div>
-                            <div class="img-back"></div>
-                            <img src="image/Freedom.jpg" alt="" id="music-cover">
-                        </div>
-
-                        <div class="navi">
-                            <button id="prev" class="action-btn">
-                                <i class="fas fa-backward"></i>
-                            </button>
-                            <button id="play" class="action-btn">
-                                <i class="fas fa-play"></i>
-                            </button>
-                            <button id="next" class="action-btn">
-                                <i class="fas fa-forward"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <h2>Music Player</h2>
-                </div>
+          </div>
+          <div id="todo-wrap">
+            <div id="login-box">
+              <form class="login">
+                <h2 class="name-input"></h2>
+              </form>
+              <div class="quote">
+                <span class="text"></span>
+                <span class="author"></span>
+              </div>
             </div>
+            <div id="todo-box">
+              <div class="calender">
+                <div id="dycalender"></div>
+              </div>
+              <div class="todo">
+                <div class="todo-date">
+                  <h2>TODAY</h2>
+                  <span class="today">date</span>
+                </div>
+                <ul id="todo-list"></ul>
+                <form id="todo-input">
+                  <input
+                    class="todo-input-text"
+                    maxlength="20"
+                    type="text"
+                    placeholder="Please write your to-do!"
+                  />
+                  <button class="todo-input-btn"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="music-box">
+            <div class="music">
+              <div class="music-container" id="music-container">
+                <div class="music-info">
+                  <h4 id="music-title" class="music-title"></h4>
+                  <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                  </div>
+                </div>
+
+                <audio id="audio" src="music/Freedom.mp3"></audio>
+
+                <div class="img-container">
+                  <div class="music-dot"></div>
+                  <div class="img-back"></div>
+                  <img src="image/Freedom.jpg" alt="" id="music-cover" />
+                </div>
+
+                <div class="navi">
+                  <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                  </button>
+                  <button id="play" class="action-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                  </button>
+                </div>
+              </div>
+              <h2>Music Player</h2>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="menu-box">
+      </div>
+      <div id="menu-box">
         <ul class="menu">
-            <li class="goole"><a href="https://www.google.com/" target="_blank"></a></li>
-            <li class="naver"><a href="https://www.naver.com/" target="_blank"></a></li>
-            <li class="youtube"><a href="https://www.youtube.com/" target="_blank"></a></li>
-            <li class="nomad"><a href="https://nomadcoders.co/" target="_blank"></a></li>
-            <li class="dark"><i class="fas fa-moon"></i></li>
+          <li class="goole">
+            <a href="https://www.google.com/" target="_blank"></a>
+          </li>
+          <li class="naver">
+            <a href="https://www.naver.com/" target="_blank"></a>
+          </li>
+          <li class="youtube">
+            <a href="https://www.youtube.com/" target="_blank"></a>
+          </li>
+          <li class="nomad">
+            <a href="https://nomadcoders.co/" target="_blank"></a>
+          </li>
+          <li class="dark"><i class="fas fa-moon"></i></li>
         </ul>
+      </div>
+      <div id="background"></div>
     </div>
-    <div id="background"></div>
-</div>
 
-<div id="modal">
-    <form class="modal-form">
+    <div id="modal">
+      <form class="modal-form">
         <p class="modal-title">What is your name?</p>
-        <input class="modal-input" maxlength="20" type="text" placeholder="please write your name"/>
+        <input
+          class="modal-input"
+          maxlength="20"
+          type="text"
+          placeholder="please write your name"
+        />
         <button type="submit" class="modal-btn">Submit</button>
-    </form>
-</div>
+      </form>
+    </div>
 
-<script src="src/calculator.js"></script>
-<script src="src/modal.js"></script>
-<script src="src/background.js"></script>
-<script src="src/clock.js"></script>
-<script src="src/weather.js"></script>
-<script src="src/quotes.js"></script>
-<script src="src/darkmode.js"></script>
-<script src="src/calender.js"></script>
-<script src="src/dycalendar.js"></script>
-<script src="src/todo.js"></script>
-<script src="src/music.js"></script>
-<script>
-    dycalendar.draw({
-        target: "#dycalender",
-        type: "month",
-        dayformat: "full",
-        monthformat: "full",
+    <script src="src/calculator.js"></script>
+    <script src="src/modal.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/quotes.js"></script>
+    <script src="src/darkmode.js"></script>
+    <script src="src/calender.js"></script>
+    <script src="src/dycalendar.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/music.js"></script>
+    <script>
+      dycalendar.draw({
+        target: '#dycalender',
+        type: 'month',
+        dayformat: 'full',
+        monthformat: 'full',
         highlighttargetdate: true,
-        prevnextbutton: "show",
-    })
-</script>
-</body>
+        prevnextbutton: 'show',
+      });
+    </script>
+  </body>
 </html>
